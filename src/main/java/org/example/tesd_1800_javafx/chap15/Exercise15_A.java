@@ -4,9 +4,11 @@ import javafx.animation.FadeTransition;
 import javafx.animation.PathTransition;
 import javafx.animation.Timeline;
 import javafx.application.Application;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -41,8 +43,8 @@ public class Exercise15_A extends Application {
         Rectangle rectangle = new Rectangle(0, 0, 25, 50);
         pentagon.setFill(Color.WHITE);
         pentagon.setStroke(Color.BLACK);
-        rectangle.setFill(Color.WHITE);
-        rectangle.setStroke(Color.LIGHTSLATEGRAY);
+        rectangle.setFill(Color.MEDIUMPURPLE);
+        rectangle.setStroke(Color.BLACK);
         // Create path transition
         PathTransition pt = new PathTransition(Duration.millis(800), pentagon, rectangle);
         pt.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
